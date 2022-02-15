@@ -7,25 +7,6 @@ var wordles = File.ReadAllLines("testing-wordles.txt")
     .ToArray();
 
 var guessingWords = File.ReadAllLines("words_alpha.txt");
-//var guessingWords = File.ReadAllLines("Collins Scrabble Words (2019) Lowered.txt");
-
-//var words = new List<string>();
-//var rnd = new Random();
-
-//while(words.Count() < 500)
-//{
-//    var word = guessingWords[rnd.Next(guessingWords.Length)];
-
-//    if (!words.Contains(word))
-//    {
-//        words.Add(word);
-//    }
-//}
-
-//File.AppendAllLines("C:/Users/Liam/Desktop/testing-words.txt", words);
-
-
-
 
 var algorithm = new BigBrainAlgorithm(guessingWords);
 
